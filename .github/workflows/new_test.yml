@@ -17,6 +17,6 @@ jobs:
       - name: Run API tests
         run: |
           postman collection run "26436649-9f231c5d-d09c-481f-b278-b7e50008d464"
-   - name: logout
+     - name: logout
      run: postman logout ${{ secrets.POSTMAN_API_KEY }}
 
