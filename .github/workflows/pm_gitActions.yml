@@ -6,7 +6,7 @@ push
 
 jobs:
   automated-api-tests:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Install Postman CLI
@@ -19,3 +19,4 @@ jobs:
           postman collection run "26436649-9f231c5d-d09c-481f-b278-b7e50008d464"
    - name: logout
      run: postman logout ${{ secrets.POSTMAN_API_KEY }}
+
